@@ -2,7 +2,7 @@ import React from "react";
 import "./NewArrival.css";
 import { Card, Button } from "react-bootstrap";
 const NewArrival = (props) => {
-  const { name, img, price, smallImg } = props.product;
+  const { name, price, smallImg } = props.product;
   return (
     <>
       <Card

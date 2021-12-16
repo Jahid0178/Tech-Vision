@@ -27,8 +27,8 @@ const NewArrivals = () => {
         className="mySwiper"
       >
         {products.map((product) => (
-          <SwiperSlide>
-            <NewArrival key={product.id} product={product} />
+          <SwiperSlide key={product.id}>
+            <NewArrival product={product} />
           </SwiperSlide>
         ))}
       </Swiper>
