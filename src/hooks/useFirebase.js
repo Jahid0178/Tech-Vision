@@ -7,6 +7,7 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
 
+  // Auth
   const auth = getAuth();
 
   // Provider
