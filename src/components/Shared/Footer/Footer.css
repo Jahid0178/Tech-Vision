@@ -1,0 +1,17 @@
+.footer-ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #999;
+}
+
+.footer-link:hover {
+  color: #333;
+}

@@ -1,0 +1,7 @@
+.new-arrival-product-card {
+  border: 2px solid red;
+}
+
+.new-arrival-product-card:hover {
+  box-shadow: 2px 2px 5px #ccc;
+}

@@ -1,0 +1,11 @@
+.new-arrivals-title {
+  color: red;
+}
+
+.new-arrivals-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: red;
+}
