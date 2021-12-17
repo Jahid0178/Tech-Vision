@@ -1,8 +1,13 @@
 import React from "react";
 import "./NewArrival.css";
 import { Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 const NewArrival = (props) => {
-  const { name, price, smallImg } = props.product;
+  const { _id, name, price, smallImg } = props.product;
+  const navigate = useNavigate();
+  const viewDetails = (id) => {
+    navigate(`/productDetails/${id}`);
+  };
   return (
     <>
       <Card
@@ -15,7 +20,7 @@ const NewArrival = (props) => {
           <Card.Text>Price: $ {price}</Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button>View Details</Button>
+          <Button onClick={() => viewDetails(_id)}>View Details</Button>
         </Card.Footer>
       </Card>
     </>
