@@ -7,7 +7,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navigation.css";
 
 const Navigation = () => {
@@ -36,6 +36,9 @@ const Navigation = () => {
               Contact
             </NavLink>
           </Nav>
+          <NavLink to="/login" className="nav-link">
+            <Button>Login</Button>
+          </NavLink>
         </Container>
       </Navbar>
     </div>

@@ -10,7 +10,9 @@ const Banner = () => {
           <img
             className="d-block w-100 img-fluid"
             style={{ height: "90vh", objectFit: "cover" }}
-            src={"https://i.ibb.co/5RmZmhX/pexels-pixabay-325876.jpg"}
+            src={
+              "https://cdn.pixabay.com/photo/2018/07/08/10/49/ryzen-3523675_960_720.jpg"
+            }
             alt="First slide"
           />
           <Carousel.Caption>
@@ -22,7 +24,9 @@ const Banner = () => {
           <img
             className="d-block w-100 img-fluid"
             style={{ height: "90vh", objectFit: "cover" }}
-            src={"https://i.ibb.co/Wy7xxN0/pexels-artem-beliaikin-2447042.jpg"}
+            src={
+              "https://www.extremetech.com/wp-content/uploads/2017/03/Ryzen2-Feature-640x353.jpg"
+            }
             alt="Second slide"
           />
 

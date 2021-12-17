@@ -1,13 +1,15 @@
 import React from "react";
 import { Col, Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Product.css";
 
 const Product = (props) => {
+  const navigate = useNavigate();
   const { name, price, smallImg, speed, cache, cores, id } = props.product;
 
   // get Product id for specific product details
   const viewDetails = (id) => {
-    console.log(`click id: ${id}`);
+    navigate(`/productDetails/${id}`);
   };
   return (
     <>
