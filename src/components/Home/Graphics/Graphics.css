@@ -1,0 +1,8 @@
+.title-underline::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: red;
+  margin-top: 5px;
+}

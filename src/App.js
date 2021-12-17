@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import ContactUS from "./components/ContactUS/ContactUS";
 import Login from "./components/Login/Login/Login";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Footer from "./components/Shared/Footer/Footer";
@@ -22,6 +23,7 @@ function App() {
               path="/productDetails/:productId"
               element={<ProductDetails />}
             />
+            <Route path="/contact" element={<ContactUS />} />
             <Route path="/login" element={<Login />} />
           </Routes>
           <Footer />
