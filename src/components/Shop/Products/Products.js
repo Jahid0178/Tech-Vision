@@ -6,7 +6,8 @@ import "./Products.css";
 const Products = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("./products.json")
+    const url = "https://tech-vision-dev.herokuapp.com/products";
+    fetch(url)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   });
@@ -16,7 +17,7 @@ const Products = () => {
       <h2>Our All Products</h2>
       <Row>
         {products.map((product) => (
-          <Product key={product.id} product={product} />
+          <Product key={product._id} product={product} />
         ))}
       </Row>
     </Container>

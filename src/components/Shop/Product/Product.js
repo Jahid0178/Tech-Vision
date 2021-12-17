@@ -5,7 +5,7 @@ import "./Product.css";
 
 const Product = (props) => {
   const navigate = useNavigate();
-  const { name, price, smallImg, speed, cache, cores, id } = props.product;
+  const { name, price, smallImg, speed, cache, cores, _id } = props.product;
 
   // get Product id for specific product details
   const viewDetails = (id) => {
@@ -26,7 +26,7 @@ const Product = (props) => {
             <Card.Text className="text-center fw-bold product-price">
               {price} <span className="fw-bold">৳</span>
             </Card.Text>
-            <Button onClick={() => viewDetails(id)}>View Details</Button>
+            <Button onClick={() => viewDetails(_id)}>View Details</Button>
           </Card.Footer>
         </Card>
       </Col>

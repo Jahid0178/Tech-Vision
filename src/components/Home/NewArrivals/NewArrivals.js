@@ -7,7 +7,8 @@ import "./NewArrivals.css";
 const NewArrivals = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("/products.json")
+    const url = "https://tech-vision-dev.herokuapp.com/products";
+    fetch(url)
       .then((res) => res.json())
       .then((data) =>
         setProducts(data.filter((product) => product.category === "processor"))
@@ -16,7 +17,7 @@ const NewArrivals = () => {
 
   return (
     <Container className="my-3">
-      <h2 className="new-arrivals-title">New Arrivals</h2>
+      <h2 className="new-arrivals-title">Processor</h2>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -27,7 +28,7 @@ const NewArrivals = () => {
         className="mySwiper"
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id}>
+          <SwiperSlide key={product._id}>
             <NewArrival product={product} />
           </SwiperSlide>
         ))}

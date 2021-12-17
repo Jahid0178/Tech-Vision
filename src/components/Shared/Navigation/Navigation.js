@@ -15,12 +15,9 @@ const Navigation = () => {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Tech Vision</Navbar.Brand>
+          <Navbar.Brand href="/home">Tech Vision</Navbar.Brand>
           <InputGroup className="w-50 rounded-pill overflow-hidden mx-auto">
-            <FormControl
-              placeholder="Search Your Products"
-              aria-describedby="basic-addon2"
-            />
+            <FormControl placeholder="Search Your Products" />
             <Button variant="secondary" id="button-addon2">
               Search
             </Button>

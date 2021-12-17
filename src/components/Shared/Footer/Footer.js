@@ -14,13 +14,13 @@ const Footer = () => {
   return (
     <Container fluid className="mt-3 py-3">
       <Row>
-        <Col sm={12}>
+        <Col>
           <h3>Tech Vision</h3>
           <p className="text-secondary">
             &copy; 2021 Tech Vision, <br /> All Rights Reserved
           </p>
         </Col>
-        <Col sm={12} md={6} lg={3}>
+        <Col>
           <h6>About</h6>
           <ul className="footer-ul">
             <li className="my-2">
@@ -45,7 +45,7 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col sm={12} md={6} lg={3}>
+        <Col>
           <h6>Useful Links</h6>
           <ul className="footer-ul">
             <li className="my-2">
@@ -70,7 +70,7 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col sm={12} md={6} lg={3}>
+        <Col>
           <h6>Follow US</h6>
           <ul className="footer-ul">
             <li className="my-2">
@@ -95,7 +95,7 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col sm={12} md={6} lg={3}>
+        <Col>
           <h4>Subscribe</h4>
           <p>Subscribe to our newsletter to receive news on update.</p>
           <InputGroup className="mb-3">
