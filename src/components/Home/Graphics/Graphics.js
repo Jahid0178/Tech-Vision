@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import GraphicsCard from "../GraphicsCard/GraphicsCard";
 import "./Graphics.css";

@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import ContactUS from "./components/ContactUS/ContactUS";
 import Login from "./components/Login/Login/Login";
+import NotFound from "./components/NotFound/NotFound";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Footer from "./components/Shared/Footer/Footer";
 import Navigation from "./components/Shared/Navigation/Navigation";
@@ -25,6 +26,7 @@ function App() {
             />
             <Route path="/contact" element={<ContactUS />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/notFound" element={<NotFound />} />
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -1,0 +1,17 @@
+.login-input-field {
+  width: 450px;
+  height: 45px;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-btn {
+  border: 1px solid #ddd;
+  padding: 5px 0;
+  background: #FF5C43;
+  color: #fff;
+  border-radius: 5px;
+}
