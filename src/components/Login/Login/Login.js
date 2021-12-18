@@ -3,8 +3,10 @@ import { useForm } from "react-hook-form";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
+  const { signInWithGoogle } = useAuth();
   const {
     register,
     handleSubmit,
@@ -66,7 +68,10 @@ const Login = () => {
             </span>
             <br />
             <div className="mt-2">
-              <Button className="bg-transparent text-black border-dark">
+              <Button
+                onClick={signInWithGoogle}
+                className="bg-transparent text-black border-dark"
+              >
                 <i class="fab fa-google"></i> Google Sign In
               </Button>
             </div>
