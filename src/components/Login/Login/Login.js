@@ -33,6 +33,7 @@ const Login = () => {
               className="d-flex flex-column"
             >
               {/* register your input into the hook by invoking the "register" function */}
+              <label>Email</label>
               <input
                 type="email"
                 className="login-input-field"
@@ -41,6 +42,7 @@ const Login = () => {
               />
 
               {/* include validation with required or other standard HTML validation rules */}
+              <label>Password</label>
               <input
                 type="password"
                 className="login-input-field"
