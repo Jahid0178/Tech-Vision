@@ -1,7 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const {
@@ -54,6 +55,21 @@ const Login = () => {
 
               <input className="login-btn" type="submit" value="Login" />
             </form>
+            <p className="my-2">
+              Don't have an account?
+              <Link to="/register" className="ms-1">
+                Please Create an account
+              </Link>
+            </p>
+            <span className="fw-bold">
+              ---------------------Or---------------------
+            </span>
+            <br />
+            <div className="mt-2">
+              <Button className="bg-transparent text-black border-dark">
+                <i class="fab fa-google"></i> Google Sign In
+              </Button>
+            </div>
           </div>
         </Col>
       </Row>

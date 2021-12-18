@@ -1,0 +1,20 @@
+.register-input-field {
+  width: 450px;
+  height: 35px;
+  margin-bottom: 5px;
+  padding: 0 8px;
+  outline-color: #FF5C43;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+}
+
+.register-btn {
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.register-btn:hover {
+  color: #fff;
+  background-color: #FF5C43;
+}
