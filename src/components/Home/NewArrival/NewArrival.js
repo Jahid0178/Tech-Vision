@@ -10,17 +10,16 @@ const NewArrival = (props) => {
   };
   return (
     <>
-      <Card
-        style={{ width: "19rem" }}
-        className="new-arrival-product-card my-3"
-      >
+      <Card style={{ width: "19rem" }} className="product-card my-3">
         <Card.Img variant="top" src={smallImg} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>Price: $ {price}</Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button onClick={() => viewDetails(_id)}>View Details</Button>
+          <Button className="view-details-btn" onClick={() => viewDetails(_id)}>
+            View Details
+          </Button>
         </Card.Footer>
       </Card>
     </>

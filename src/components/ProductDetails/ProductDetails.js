@@ -102,7 +102,7 @@ const ProductDetails = () => {
 
               <Button className="btn btn-primary fw-bold">+</Button>
             </div>
-            <Button className="ms-3">Purchase Now</Button>
+            <Button className="ms-3 purchase-btn">Purchase Now</Button>
           </Col>
         </Row>
       </Container>

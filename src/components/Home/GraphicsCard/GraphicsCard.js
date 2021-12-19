@@ -11,7 +11,7 @@ const GraphicsCard = (props) => {
   };
   return (
     <div className="my-3">
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "18rem" }} className="product-card">
         <Card.Img variant="top" src={smallImg} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
@@ -19,7 +19,11 @@ const GraphicsCard = (props) => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button onClick={() => viewDetails(_id)} variant="primary">
+          <Button
+            className="view-details-btn"
+            onClick={() => viewDetails(_id)}
+            variant="primary"
+          >
             View Details
           </Button>
         </Card.Body>

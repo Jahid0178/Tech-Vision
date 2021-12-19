@@ -14,7 +14,7 @@ const Product = (props) => {
   return (
     <>
       <Col sm={12} md={6} lg={3} className="my-3">
-        <Card>
+        <Card className="all-product-card">
           <Card.Img variant="top" src={smallImg} />
           <Card.Body>
             <Card.Title className="fs-6">{name}</Card.Title>
@@ -26,7 +26,12 @@ const Product = (props) => {
             <Card.Text className="text-center fw-bold product-price">
               {price} <span className="fw-bold">৳</span>
             </Card.Text>
-            <Button onClick={() => viewDetails(_id)}>View Details</Button>
+            <Button
+              className="view-details-btn"
+              onClick={() => viewDetails(_id)}
+            >
+              View Details
+            </Button>
           </Card.Footer>
         </Card>
       </Col>
