@@ -7,6 +7,8 @@ const ProductDetails = () => {
   const { productId } = useParams({});
   const [product, setProduct] = useState([]);
   const [counter, setCounter] = useState(0);
+
+  // fetch api
   useEffect(() => {
     const url = "https://tech-vision-dev.herokuapp.com/products";
     fetch(url)
