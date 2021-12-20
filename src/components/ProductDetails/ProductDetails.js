@@ -6,6 +6,7 @@ import "./ProductDetails.css";
 const ProductDetails = () => {
   const { productId } = useParams({});
   const [product, setProduct] = useState([]);
+  const [counter, setCounter] = useState(0);
   useEffect(() => {
     const url = "https://tech-vision-dev.herokuapp.com/products";
     fetch(url)
@@ -14,6 +15,20 @@ const ProductDetails = () => {
         setProduct(data.find((product) => product._id === productId))
       );
   }, [productId]);
+
+  // Increment button
+  const handleIncrement = () => {
+    const increment = counter + 1;
+    setCounter(increment);
+  };
+
+  // Decrement button
+  const handleDecrement = () => {
+    const decrement = counter - 1;
+    if (decrement >= 0) {
+      setCounter(decrement);
+    }
+  };
 
   return (
     <div className="py-3 my-3">
@@ -93,14 +108,25 @@ const ProductDetails = () => {
               role="group"
               aria-label="Basic radio toggle button group"
             >
-              <Button className="btn btn-primary fw-bold">-</Button>
+              <Button
+                onClick={() => handleDecrement()}
+                className="btn btn-primary fw-bold"
+              >
+                -
+              </Button>
               <input
                 type="text"
-                value="0"
-                className="btn btn-outline-primary w-25"
+                value={counter}
+                onChange={(e) => setCounter(e.target.value)}
+                className="btn btn-outline-primary w-25 numbers"
               />
 
-              <Button className="btn btn-primary fw-bold">+</Button>
+              <Button
+                onClick={() => handleIncrement()}
+                className="btn btn-primary fw-bold"
+              >
+                +
+              </Button>
             </div>
             <Button className="ms-3 purchase-btn">Purchase Now</Button>
           </Col>
